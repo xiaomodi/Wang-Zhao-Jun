@@ -8,6 +8,7 @@
     <script src='./js/zepto.js'></script>
 </head>
 <body>
+    <!-- 场景一 -->
     <div class="content landscape" id='content1' style="display: block; width: 1920px; height: 920px; top: 0px; left: 0px; transform: none; transform-origin: 50% 50%;">
         <div class="first-wrapper">
             <div class='first'>
@@ -15,6 +16,13 @@
             </div>
         </div>
     </div>
+    <!-- 场景二 -->
+    <div class="content landscape" id='contentOne' style="display: none; width: 1920px; height: 920px; top: 0px; left: 0px; transform: none; transform-origin: 50% 50%;">
+        <div class="desc-wrapper">
+            <div class='desc'></div>
+        </div>
+    </div>
+    <!-- 场景三 -->
     <div class="content landscape" id='content2' style="display: none; width: 1920px; height: 920px; top: 0px; left: 0px; transform: none; transform-origin: 50% 50%;">
         <div class="second-wrapper">
             <div class='second'>
@@ -22,22 +30,24 @@
             </div>
         </div>
     </div>
+    <!-- 场景五 -->
     <div class="content landscape" id='content3' style="display: none; width: 1920px; height: 920px; top: 0px; left: 0px; transform: none; transform-origin: 50% 50%;">
         <div class="third-wrapper">
             <div class='third'>
-                <img class='third-pic' src="./image/4成年.png" alt="">
+                <img class='third-pic1' src="./image/4成年.png" alt="">
+                <img class='third-pic2' src="./image/4年幼时.png" alt="">
+                <!-- <img class='third-pic3' src="./image/4蝴蝶.png" alt=""> -->
+                <!-- <img class='third-pic4' src="./image/4蝴蝶水平翻转.png" alt=""> -->
+                <img class='third-pic5' src="./image/4枝叶.png" alt="">
+            </div>
+            <div class="third-desc">
+                <p id='third-p1'>时光一晃而过，昭君逐渐长成</p>
+                <p id='third-p2'>姿容秀美，仪态大方</p>
             </div>
         </div>
     </div>
-    <div class="content landscape" id='content4' style="display: none; width: 1920px; height: 920px; top: 0px; left: 0px; transform: none; transform-origin: 50% 50%;">
-        <div class="fourth-wrapper">
-            <div class='fourth'>
-                <img class='fourth-pic1' src="./image/4年幼时.png" alt="">
-                <img class='fourth-pic2' src="./image/4蝴蝶.png" alt="">
-                <img class='fourth-pic3' src="./image/4蝴蝶水平翻转.png" alt="">
-            </div>
-        </div>
-    </div>
+    <!-- 场景六与五合并 -->
+    <!-- 场景七 -->
     <div class="content landscape" id='content5' style="display: none; width: 1920px; height: 920px; top: 0px; left: 0px; transform: none; transform-origin: 50% 50%;">
         <div class="fivth-wrapper">
             <div class='fivth'>
@@ -45,36 +55,64 @@
                     <img class='fivth-pic1' src="./image/5离别老人.png" alt="">
                     <img class='fivth-pic2' src="./image/5离别女子.png" alt="">
                 </div>
+                <div class="fivth-desc">
+                    <p class='fivth-p1'>王昭君以“良家子”身份入选。</p>
+                    <p class='fivth-p2'>这年仲春，她泪别父母，赶赴长安。</p>
+                </div>
             </div>
         </div>
     </div>
+    <!-- 场景八 -->
     <div class="content landscape" id='content6' style="display: none; width: 1920px; height: 920px; top: 0px; left: 0px; transform: none; transform-origin: 50% 50%;">
         <div class="sixth-wrapper">
+            <div class="sixth-desc">
+                <p class='sixth-p1'>汉建昭三年初春，元帝昭告天下，</p>
+                <p class='sixth-p2'>从民间遍选秀女，入宫侍帝。</p>
+            </div>
             <div class='sixth'>
+                <video class="sixth-videos" autoplay preload muted loop src="./videos/WeChat_20200417234939.mp4"></video>
             </div>
         </div>
     </div>
+    <!-- 场景九 -->
     <div class="content landscape" id='content7' style="display: none; width: 1920px; height: 920px; top: 0px; left: 0px; transform: none; transform-origin: 50% 50%;">
         <div class="seven-wrapper">
             <div class='seven'>
                 <img class='seven-pic' src="./image/8人物.png" alt="">
             </div>
-        </div>
-    </div>
-    <div class="content landscape" id='content8' style="display: none; width: 1920px; height: 920px; top: 0px; left: 0px; transform: none; transform-origin: 50% 50%;">
-        <div class="eight-wrapper">
-            <div class='eight'>
-                <!-- <img class='seven-pic' src="./image/8人物.png" alt=""> -->
+            <div class="seven-desc">
+                <p class="seven-p1">入宫后，昭君长居于掖庭</p>
+                <p class="seven-p2">等待帝王召见</p>
             </div>
         </div>
     </div>
-    <div class="content landscape" id='content9' style="display: none; width: 1920px; height: 920px; top: 0px; left: 0px; transform: none; transform-origin: 50% 50%;">
+    <!-- 场景十 -->
+    <div class="content landscape" id='content8' style="display: none; width: 1920px; height: 920px; top: 0px; left: 0px; transform: none; transform-origin: 50% 50%;">
+        <div class="eight-wrapper">
+            <div class='eight'>
+            </div>
+            <div class="eight-desc">寒来暑往，便是三年</div>
+        </div>
+    </div>
+    <!-- 场景十一 -->
+    <div class="content landscape" id='content9' style="display: block; width: 1920px; height: 920px; top: 0px; left: 0px; transform: none; transform-origin: 50% 50%;">
         <div class="nine-wrapper">
             <div class='nine'>
                 <img class='nine-pic' src="./image/11呼韩邪单于.png" alt="">
             </div>
+            <div class="nine-desc">
+                <p>竞守元年（前33年）春正月，匈奴呼韩邪单于来朝。</p>
+            </div>
         </div>
     </div>
+    <!-- 新加 -->
+    <div class="content landscape" id='contentNine' style="display: none; width: 1920px; height: 920px; top: 0px; left: 0px; transform: none; transform-origin: 50% 50%;">
+        <div class="contentnine-wrapper">
+            <div class='contentnine'>
+            </div>
+        </div>
+    </div>
+    <!-- 场景十二 -->
     <div class="content landscape" id='content10' style="display: none; width: 1920px; height: 920px; top: 0px; left: 0px; transform: none; transform-origin: 50% 50%;">
         <div class="ten-wrapper">
             <div class='ten'>
@@ -84,8 +122,7 @@
             </div>
         </div>
     </div>
-
-
+    <!-- 场景十三 -->
     <div class="content landscape" id='content11' style="display: none; width: 1920px; height: 920px; top: 0px; left: 0px; transform: none; transform-origin: 50% 50%;">
         <div class="eleven-wrapper">
             <div class='eleven'>
@@ -94,8 +131,7 @@
             </div>
         </div>
     </div>
-
-
+    <!-- 场景十四 -->
     <div class="content landscape" id='content12' style="display: none; width: 1920px; height: 920px; top: 0px; left: 0px; transform: none; transform-origin: 50% 50%;">
         <div class="twelve-wrapper">
             <div class='twelve'>
@@ -106,7 +142,7 @@
             </div>
         </div>
     </div>
-    <!-- 空 -->
+    <!-- 场景十五 -->
     <div class="content landscape" id='content13' style="display: noone; width: 1920px; height: 920px; top: 0px; left: 0px; transform: none; transform-origin: 50% 50%;">
         <div class="fourteen-wrapper">
             <div class='fourteen'>
@@ -123,7 +159,7 @@
             </div>
         </div>
     </div>
-    <!-- 空 （12） -->
+    <!-- 场景十六 -->
     <div class="content landscape" id='content14' style="display: none; width: 1920px; height: 920px; top: 0px; left: 0px; transform: none; transform-origin: 50% 50%;">
         <div class="fiveteen-wrapper">
             <div class='fiveteen'>
@@ -133,6 +169,7 @@
             </div>
         </div>
     </div>
+    <!-- 场景十十七 -->
     <div class="content landscape" id='content15' style="display: none; width: 1920px; height: 920px; top: 0px; left: 0px; transform: none; transform-origin: 50% 50%;">
         <div class="sixteen-wrapper">
             <div class='sixteen'>
@@ -143,6 +180,7 @@
             </div>
         </div>
     </div>
+    <!-- 场景十八 -->
     <div class="content landscape" id='content16' style="display: none; width: 1920px; height: 920px; top: 0px; left: 0px; transform: none; transform-origin: 50% 50%;">
         <div class="seventeen-wrapper">
             <div class='seventeen'>
@@ -158,4 +196,5 @@
 </body>
 <script src="./js/1.js"></script>
 <script src="./js/content.js"></script>
+<script src="./js/wenzi..js"></script>
 </html>

@@ -1,6 +1,9 @@
 * {
     margin:0;
     padding:0;
+    font-family: '楷体';
+    font-size: 1.2rem;
+    font-weight: 900;
   }
   
   html, body {
@@ -52,7 +55,23 @@
     opacity: 1;
     transition: opacity .5s linear
 }
-  /* second */
+/* desc */
+.desc-wrapper{
+  width: 100%;
+  height: 100%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+.desc {
+  width: 70%;
+  height: 100%;
+  text-align: center;
+  background: url('../image/3.png') no-repeat left center;
+  background-size: cover;
+  display: table
+}
+/* second */
   .second-wrapper{
     width: 100%;
     height: 100%;
@@ -77,58 +96,52 @@
     justify-content: center;
   }
   .third {
-    width: 70%;
+    width: 80%;
     height: 100%;
     text-align: center;
     background: url('../image/4背景.png') no-repeat center center;
     background-size: cover;
-    display: flex;
-    justify-content: center
+    position: relative;
   }
-  .third-pic{
-      width: 450px;
-      height: 350px;
-  }
-  /* fourth */
-  .fourth-wrapper{
+  .third-pic1{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: -10rem;
     width: 100%;
     height: 100%;
-    position: relative;
-    display: flex;
-    justify-content: center;
+    z-index: 10;
   }
-  .fourth {
-    width: 70%;
-    height: 100%;
-    text-align: center;
-    background: url('../image/4枝叶.png') no-repeat center center;
-    background-size: cover;
-    display: flex;
-    justify-content: center;
-    position: relative
-  }
-  .fourth-pic1{
-    width: 450px;
-    height: 350px;
-  }
-  .fourth-pic2{
-      width: 60px;
-      height: 60px;
-      position: absolute;
-      top: 50px;
-      left: 120px;
-      right: 0;
-      bottom: 0;
-  }
-  .fourth-pic3{
-    width: 60px;
-    height: 60px;
+  .third-pic2{
     position: absolute;
-    top: 100px;
-    left: 170px;
+    top: 0;
+    left: 0;
     right: 0;
     bottom: 0;
-}
+    width: 100%;
+    height: 100%;
+  }
+  .third-pic5{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+  }
+  .third-desc{
+    position: absolute;
+    font-family: '楷体';
+    font-size: 1.5rem;
+    font-weight: 900;
+    color: #000;
+    text-align: center;
+    line-height: 2.2rem;
+    letter-spacing: .2rem;
+    margin-top: 1%;
+  }
 /* fivth */
 .fivth-wrapper{
     width: 100%;
@@ -159,23 +172,52 @@
       width: 100%;
       height: 100%;
   }
+  .fivth-desc{
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 1.7rem;
+    line-height: 1.5rem;
+    border: .01rem solid black;
+  }
+  .fivth-p2{
+    text-align: right;
+  }
   /* sixth */
   .sixth-wrapper{
     width: 100%;
     height: 100%;
-    position: relative;
     display: flex;
     justify-content: center;
   }
   .sixth {
-    width: 70%;
+    width: 80%;
     height: 100%;
-    text-align: center;
-    background: url('../image/6.png') no-repeat bottom center;
-    background-size: cover;
-    display: flex;
-    justify-content: center;
     overflow: hidden;
+    position: relative;
+  }
+  .sixth-videos{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: -1;
+  }
+  .sixth-desc{
+    position: absolute;
+    left: 10%;
+    right: 10%;
+    bottom: 5%;
+    z-index: 10000;
+    color: #fff!important;
+    text-align: center;
+    line-height: 1.6rem;
+    padding: 0 1.5rem;
+  }
+  .sixth-p1{
+    text-align: left;
+  }
+  .sixth-p2{
+    text-align: right;
   }
   /* seven */
   .seven-wrapper{
@@ -202,6 +244,15 @@
       position: absolute;
       bottom: 0
   }
+  .seven-desc{
+    position: absolute;
+    right: 20%;
+    bottom: 5%;
+    text-align: center;
+    line-height: 1.5rem;
+    color: #fff;
+    border: .01rem solid yellow;
+  }
   /* eight */
   .eight-wrapper{
     width: 100%;
@@ -214,12 +265,17 @@
     width: 70%;
     height: 100%;
     text-align: center;
-    background: url('../image/9完整.png') no-repeat top center;
+    background: url('../image/9完整.png') no-repeat center center;
     background-size: cover;
     display: flex;
     justify-content: center;
     overflow: hidden;
     position: relative;
+  }
+  .eight-desc{
+    position: absolute;
+    bottom: 1rem;
+    color: #fff;
   }
   /* nine */
   .nine-wrapper{
@@ -242,12 +298,40 @@
   }
   .nine-pic{
     width: 100%;
-    height: 100%;
+    height: 85%;
     position: absolute;
-    top: 0;
     left: 0;
     right: 0;
     bottom: 0;
+  }
+  .nine-desc{
+    font-size: 1.2rem !important;
+    position: absolute;
+    left: 15%;
+    right: 15%;
+    bottom: 1rem;
+    color: #fff;
+    text-align: center;
+    border: .1rem solid yellow;
+  }
+  /* nine */
+  .contentnine-wrapper{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+  }
+  .contentnine {
+    width: 70%;
+    height: 100%;
+    text-align: center;
+    background: url('../image/11.png') no-repeat center center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    position: relative;
   }
   /* ten */
   .ten-wrapper{
