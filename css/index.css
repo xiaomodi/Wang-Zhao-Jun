@@ -2,7 +2,7 @@
     margin:0;
     padding:0;
     font-family: '楷体';
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     font-weight: 900;
   }
   
@@ -133,14 +133,18 @@
   }
   .third-desc{
     position: absolute;
+    z-index: 10;
     font-family: '楷体';
     font-size: 1.5rem;
     font-weight: 900;
     color: #000;
     text-align: center;
-    line-height: 2.2rem;
+    line-height: 1.4rem;
     letter-spacing: .2rem;
     margin-top: 1%;
+    /* background: rgba(0,0,0,.7); */
+    padding: .2rem .4rem;
+    border-radius: .2rem;
   }
 /* fivth */
 .fivth-wrapper{
@@ -337,7 +341,6 @@
   .ten-wrapper{
     width: 100%;
     height: 100%;
-    position: relative;
     display: flex;
     justify-content: center;
   }
@@ -350,7 +353,8 @@
     display: flex;
     justify-content: center;
     overflow: hidden;
-    position: relative;
+    position: fixed;
+    border: .01rem solid yellow;
   }
   .ten-pic1, .ten-pic2, .ten-pic3{
     width: 100%;
@@ -360,6 +364,21 @@
     left: 0;
     right: 0;
     bottom: 0;
+  }
+  .ten-desc{
+    position: absolute;
+    left: 15%;
+    right: 15%;
+    bottom: 1rem;
+    font-size: 1.1rem;
+    text-align: center;
+  }
+  .ten-p1{
+    text-align: left;
+    text-indent: 1rem;
+  }
+  .ten-p2{
+    text-align: right;
   }
   /* eleven */
   .eleven-wrapper{
@@ -383,6 +402,16 @@
   .eleven-pic1, .eleven-pic2{
     width: 100%;
     height: 100%
+  }
+  .eleven-desc{
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 1rem;
+    line-height: 1.4rem;
+    text-align: center;
+    width: 100%;
+    color: #fff;
   }
   /* twelve */
   .twelve-wrapper{
@@ -422,7 +451,18 @@
     left: 0;
     right: 0;
     bottom: 0;
-    border: 1px solid red
+  }
+  .twelve-desc{
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    color: #fff;
+    bottom: 1rem;
+  }
+  .twelve-p1 span{
+    box-sizing: border-box;
+    border-radius: .3rem;
+    background: rgba(0,0,0,.7)
   }
   /* thirteen */
   .thirteen-wrapper{
@@ -471,6 +511,12 @@
     right: 0;
     bottom: 0;
   }
+  .forteen-desc{
+    position: absolute;
+    bottom: 1rem;
+    text-align: center;
+    line-height: 1.4rem;
+  }
    /* fiveteen */
    .fiveteen-wrapper{
     width: 100%;
@@ -500,6 +546,16 @@
   }
   .fiveteen-pic1{
     width: 100%;
+  }
+  .fivteen-desc{
+    position: absolute;
+    bottom: 1rem;
+    color: #fff;
+    background: rgba(0, 0, 0, 0.7);
+    padding: .2rem .4rem;
+    border-radius: .3rem;
+    line-height: 1.6rem;
+    border: .01rem solid black;
   }
   /* sixteen */
   .sixteen-wrapper{
@@ -539,6 +595,17 @@
     bottom: 0;
     z-index: 2
   }
+  .sixteen-desc{
+    border:.01rem solid black;
+    color: #fff;
+    position: absolute;
+    bottom: 1rem;
+    z-index: 10;
+    background: rgba(0,0,0,.7);
+    padding: .2rem .5rem;
+    box-sizing: border-box;
+    border-radius: .3rem;
+  }
   /* seventeen */
   .seventeen-wrapper{
     width: 100%;
@@ -550,6 +617,31 @@
   .seventeen {
     width: 70%;
     height: 100%;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    position: relative;
+  }
+  .seventeen-pic{
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+  }
+  .seventeen-pic-active{
+    opacity: 1;
+    transition: opacity 2s ease-in;
+  }
+  /* eightteen */
+  .eightteen-wrapper{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+  }
+  .eightteen {
+    width: 70%;
+    height: 100%;
     text-align: center;
     background: url('../image/21背景.jpg') no-repeat bottom center;
     background-size: cover;
@@ -558,7 +650,7 @@
     overflow: hidden;
     position: relative;
   }
-  .sixteen-pic1, .sixteen-pic2, .sixteen-pic3, .sixteen-pic4{
+  .eightteen-pic1, .eightteen-pic2, .eightteen-pic3, .eightteen-pic4{
     width: 100%;
     height: 100%;
     position: absolute;
@@ -568,4 +660,15 @@
     right: 0;
     bottom: 0;
     z-index: 2
+  }
+  .eightteen-desc{
+    position: absolute;
+    bottom: 1rem;
+    z-index: 10;
+    color: #fff;
+    background: rgba(0,0,0,.7);
+    padding: .2rem .7rem;
+    border-radius: .2rem;
+    line-height: 1.4rem;
+    border: .01rem solid black;
   }
