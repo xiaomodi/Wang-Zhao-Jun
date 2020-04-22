@@ -67,9 +67,20 @@
   width: 70%;
   height: 100%;
   text-align: center;
-  background: url('../image/3.png') no-repeat left center;
-  background-size: cover;
-  display: table
+  background: #000;
+  display: table;
+  position: relative;
+}
+.desc-content{
+  font-weight: bold;
+  color: #fff;
+  border: .01rem solid #fff;
+  display: table-cell;
+  vertical-align: middle;
+}
+.desc-content-p1, .desc-content-p2{
+  font-size: 2rem;
+  line-height: 3rem;
 }
 /* second */
   .second-wrapper{
