@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="div1"></div>
+    <div id="div2" style='display: none;'>王昭君以“良家子”身份入选。</div>
+    <div id="div3" style='display: none;'>这年仲春，她泪别父母，赶赴长安。</div>
+
+    <script>
+        var index = 0
+        var index = 1
+        var div1 = document.getElementById('div1')
+        var str = document.getElementById('div2').innerText
+        var str1 = document.getElementById('div3').innerText
+        console.log(str)
+
+        function type () {
+            if (index == str.length+1) {
+                return
+            }
+
+            div1.innerText = str.substring(0, index++)
+            console.log(div1.innerText)
+        }
+
+        setInterval(type, 333);
+
+        function ty () {
+            if (index1 == str.length+1) {
+                return
+            }
+
+            div1.innerText = str.substring(0, index++)
+            console.log(div1.innerText)
+        }
+    </script>
+</body>
+</html>

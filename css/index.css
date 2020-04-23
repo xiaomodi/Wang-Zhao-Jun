@@ -150,18 +150,23 @@
   .third-desc{
     position: absolute;
     z-index: 10;
-    font-family: '楷体';
-    font-size: 1.5rem;
-    font-weight: 900;
-    color: #000;
     text-align: center;
     line-height: 1.4rem;
     letter-spacing: .2rem;
     margin-top: 1%;
+    /* background: linear-gradient(to bottom, rgba(0,0,0,0.5), rgba(0,0,0,.8), rgba(0,0,0,0.5)); */
     /* background: rgba(0,0,0,.7); */
-    padding: .2rem .4rem;
+    /* padding: .2rem .4rem; */
     border-radius: .2rem;
   }
+#third-p1, #third-p2 span{
+  font-size: 1.2rem;
+  font-weight: 900;
+  line-height: 1.5rem;
+  color: #fff;
+  background: linear-gradient(to bottom, rgba(0,0,0,.2), rgba(0,0,0,.5), rgba(0,0,0,.2));
+  margin-bottom: .5rem;
+}
 /* fivth */
 .fivth-wrapper{
     width: 100%;
@@ -198,10 +203,22 @@
     right: 0;
     bottom: 1.7rem;
     line-height: 1.5rem;
-    border: .01rem solid black;
+  }
+  .fivth-p1{
+    text-align: left;
+    margin-left: 9%;
+  }
+  .fivth-p1 span{
+    color: #fff;
+    background: linear-gradient(to bottom, rgba(0,0,0,.2), rgba(0,0,0,.5), rgba(0,0,0,.2));
   }
   .fivth-p2{
     text-align: right;
+    margin-right: 5%;
+  }
+  .fivth-p2 span{
+    color: #fff;
+    background: linear-gradient(to bottom, rgba(0,0,0,.2), rgba(0,0,0,.5), rgba(0,0,0,.2));
   }
   /* sixth */
   .sixth-wrapper{
@@ -231,13 +248,21 @@
     color: #fff!important;
     text-align: center;
     line-height: 1.6rem;
-    padding: 0 1.5rem;
+    /* padding: 0 1.5rem; */
   }
   .sixth-p1{
     text-align: left;
   }
+  .sixth-p1 span{
+    color: #fff;
+    background: linear-gradient(to bottom, rgba(0,0,0,.2), rgba(0,0,0,.5), rgba(0,0,0,.2));
+  }
   .sixth-p2{
     text-align: right;
+  }
+  .sixth-p2 span{
+    color: #fff;
+    background: linear-gradient(to bottom, rgba(0,0,0,.2), rgba(0,0,0,.5), rgba(0,0,0,.2));
   }
   /* seven */
   .seven-wrapper{
@@ -270,8 +295,11 @@
     bottom: 5%;
     text-align: center;
     line-height: 1.5rem;
+    letter-spacing: .05rem;
+  }
+  .seven-p1, .seven-p2 span{
     color: #fff;
-    border: .01rem solid yellow;
+    background: linear-gradient(to bottom, rgba(0,0,0,.2), rgba(0,0,0,.5), rgba(0,0,0,.2));
   }
   /* eight */
   .eight-wrapper{
@@ -294,8 +322,12 @@
   }
   .eight-desc{
     position: absolute;
-    bottom: 1rem;
+    bottom: 3rem;
     color: #fff;
+  }
+  .eight-desc span{
+    color: #fff;
+    background: linear-gradient(to bottom, rgba(0,0,0,.2), rgba(0,0,0,.5), rgba(0,0,0,.2));
   }
   /* nine */
   .nine-wrapper{
@@ -325,14 +357,14 @@
     bottom: 0;
   }
   .nine-desc{
-    font-size: 1.2rem !important;
     position: absolute;
-    left: 15%;
-    right: 15%;
-    bottom: 1rem;
+    bottom: 3rem;
     color: #fff;
     text-align: center;
-    border: .1rem solid yellow;
+  }
+  .nine-desc span{
+    color: #fff;
+    background: linear-gradient(to bottom, rgba(0,0,0,.2), rgba(0,0,0,.5), rgba(0,0,0,.2));
   }
   /* nine */
   .contentnine-wrapper{
@@ -346,12 +378,19 @@
     width: 70%;
     height: 100%;
     text-align: center;
-    background: url('../image/11.png') no-repeat center center;
-    background-size: cover;
-    display: flex;
-    justify-content: center;
-    overflow: hidden;
+    background: #000;
     position: relative;
+    display: table;
+  }
+  .contentnine-desc{
+    display: table-cell;
+    vertical-align: middle;
+    color: #fff;
+  }
+  .contentnine-p1, .contentnine-p2, .contentnine-p3, .contentnine-p4, .contentnine-p5, .contentnine-p6, .contentnine-p7, .contentnine-p8{
+    font-size: 1.3rem;
+    line-height: 2rem;
+    font-weight: bold;
   }
   /* ten */
   .ten-wrapper{

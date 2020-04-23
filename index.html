@@ -35,7 +35,7 @@
     <div class="content landscape" id='content2' style="display: none; width: 1920px; height: 920px; top: 0px; left: 0px; transform: none; transform-origin: 50% 50%;">
         <div class="second-wrapper">
             <div class='second'>
-               <audio src="./music/ku.mp3" loop='loop' autoplay='autoplay'></audio>
+               <audio src="./music/ku.mp3" loop='true' autoplay='autoplay' id='audio1'></audio>
             </div>
         </div>
     </div>
@@ -50,8 +50,8 @@
                 <img class='third-pic5' src="./image/4枝叶.png" alt="">
             </div>
             <div class="third-desc">
-                <p id='third-p1'>时光一晃而过，昭君逐渐长成</p>
-                <p id='third-p2'>姿容秀美，仪态大方</p>
+                <p id='third-p1' style='opacity: 0;'><span>时光一晃而过，昭君逐渐长成</span></p>
+                <p id='third-p2' style='opacity: 0;'><span>姿容秀美，仪态大方</span></p>
             </div>
         </div>
     </div>
@@ -63,10 +63,10 @@
                 <div class="pics-content">
                     <img class='fivth-pic1' src="./image/5离别老人.png" alt="">
                     <img class='fivth-pic2' src="./image/5离别女子.png" alt="">
-                </div>
-                <div class="fivth-desc">
-                    <p class='fivth-p1'>王昭君以“良家子”身份入选。</p>
-                    <p class='fivth-p2'>这年仲春，她泪别父母，赶赴长安。</p>
+                    <div class="fivth-desc">
+                        <p class='fivth-p1' id='fivth-p1' style='opacity: 0;'><span>王昭君以“良家子”身份入选。</span></p>
+                        <p class='fivth-p2' id='fivth-p2' style='opacity: 0;'><span>这年仲春，她泪别父母，赶赴长安。</span></p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -77,8 +77,8 @@
             <div class='sixth'>
                 <video class="sixth-videos" autoplay preload muted loop src="./videos/WeChat_20200417234939.mp4"></video>
                 <div class="sixth-desc">
-                    <p class='sixth-p1'>汉建昭三年初春，元帝昭告天下，</p>
-                    <p class='sixth-p2'>从民间遍选秀女，入宫侍帝。</p>
+                    <p class='sixth-p1' id='sixth-p1' style='opacity: 0;'><span>汉建昭三年初春，元帝昭告天下，</span></p>
+                    <p class='sixth-p2' id='sixth-p2' style='opacity: 0;'><span>从民间遍选秀女，入宫侍帝。</span></p>
                 </div>
             </div>
         </div>
@@ -90,8 +90,8 @@
                 <img class='seven-pic' src="./image/8人物.png" alt="">
             </div>
             <div class="seven-desc">
-                <p class="seven-p1">入宫后，昭君长居于掖庭</p>
-                <p class="seven-p2">等待帝王召见</p>
+                <p class="seven-p1" id='seven-p1' style='opacity: 0;'><span>入宫后，昭君长居于掖庭</span></p>
+                <p class="seven-p2" id='seven-p2' style='opacity: 0;'><span>等待帝王召见</span></p>
             </div>
         </div>
     </div>
@@ -99,8 +99,8 @@
     <div class="content landscape" id='content8' style="display: none; width: 1920px; height: 920px; top: 0px; left: 0px; transform: none; transform-origin: 50% 50%;">
         <div class="eight-wrapper">
             <div class='eight'>
+                <div class="eight-desc" id='eight-p1' style="opacity: 0"><span>寒来暑往，便是三年</span></div>
             </div>
-            <div class="eight-desc">寒来暑往，便是三年</div>
         </div>
     </div>
     <!-- 场景十一 -->
@@ -108,9 +108,9 @@
         <div class="nine-wrapper">
             <div class='nine'>
                 <img class='nine-pic' src="./image/11呼韩邪单于.png" alt="">
-            </div>
-            <div class="nine-desc">
-                <p>竞守元年（前33年）春正月，匈奴呼韩邪单于来朝。</p>
+                <div class="nine-desc" id='nine-p1' style='opacity: 0;'>
+                    <span>竞守元年（前33年）春正月，匈奴呼韩邪单于来朝。</span>
+                </div>
             </div>
         </div>
     </div>
@@ -118,6 +118,15 @@
     <div class="content landscape" id='contentNine' style="display: none; width: 1920px; height: 920px; top: 0px; left: 0px; transform: none; transform-origin: 50% 50%;">
         <div class="contentnine-wrapper">
             <div class='contentnine'>
+                <div class="contentnine-desc">
+                    <div class="contentnine-p1" id='CNP1' style='opacity: 0;'>汉元帝下诏</div>
+                    <div class="contentnine-p2" id='CNP2' style='opacity: 0;'>“匈奴邱文单于背叛礼仪</div>
+                    <div class="contentnine-p3" id='CNP3' style='opacity: 0;'>已经伏罪被诛，呼韩邪单于不忘恩德，仰</div>
+                    <div class="contentnine-p4" id='CNP4' style='opacity: 0;'>慕大汉礼仪，再次修朝贺之礼，愿意保持</div>
+                    <div class="contentnine-p5" id='CNP5' style='opacity: 0;'>中原与塞外的长期和睦友好，使边陲长无</div>
+                    <div class="contentnine-p6" id='CNP6' style='opacity: 0;'>兵草之祸，可改元为竟守。赐单于的侍诏</div>
+                    <div class="contentnine-p7" id='CNP7' style='opacity: 0;'>掖庭王嫱为其后。”<div>
+                </div>
             </div>
         </div>
     </div>
