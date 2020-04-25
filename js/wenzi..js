@@ -121,12 +121,16 @@ content7.onclick = () => {
 
 const content8 = document.getElementById('content8')
 const NP1 = document.getElementById('nine-p1')
+const NP = document.getElementById('nine-pic')
 
 content8.onclick = () => {
     setTimeout(() => {
-        NP1.style.opacity = 1
-        NP1.style.transition = 'all 2s linear'
-    }, 1800)
+        NP.className = 'nine-pic active9'
+        setTimeout(() => {
+            NP1.style.opacity = 1
+            NP1.style.transition = 'all 2s linear'
+        }, 2000)
+    }, 1200)
 }
 
 const b = document.getElementById('content9')
