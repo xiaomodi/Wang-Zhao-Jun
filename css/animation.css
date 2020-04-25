@@ -8,7 +8,6 @@
         color: transparent;
         -webkit-background-clip: text;
     }
-    /* 3% */
     7% {
         background: -webkit-linear-gradient(top, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 1) 5%, rgba(255, 255, 255, 0) 10%, rgba(255, 255, 255, 0) 100%);
         color: transparent;
@@ -81,7 +80,23 @@
     }
 }
 
+/* 场景九 */
+.active7{
+    opacity: 1;
+    right: 0;
+    animation: ImgSevenShow 2s linear
+}
 
+@keyframes ImgSevenShow {
+    from {
+        right: -200px;
+        opacity: 0;
+    }
+    to {
+        right: 0;
+        opacity: 1
+    }
+}
 /* 场景十一 */
 .active9{
     opacity: 1;

@@ -93,10 +93,12 @@ SPShow = () => {
 }
 
 const content6 = document.getElementById('content6')
+const SevenImg = document.getElementById('seven-Img')
 const SEP1 = document.getElementById('seven-p1')
 const SEP2 = document.getElementById('seven-p2')
 
 content6.onclick = () => {
+    SevenImg.className = 'seven-pic active7'
     setTimeout(() => {
         SEP1.style.opacity = 1
         SEP1.style.transition = 'all 2s linear'
