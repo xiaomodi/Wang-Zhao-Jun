@@ -1,0 +1,101 @@
+.active {
+    -webkit-animation: text 3.5s 0s ease-in-out;
+    -webkit-animation-fill-mode: forwards;
+}
+@-webkit-keyframes text {
+    0% {
+        background: -webkit-linear-gradient(top, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0) 100%);
+        color: transparent;
+        -webkit-background-clip: text;
+    }
+    /* 3% */
+    7% {
+        background: -webkit-linear-gradient(top, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 1) 5%, rgba(255, 255, 255, 0) 10%, rgba(255, 255, 255, 0) 100%);
+        color: transparent;
+        -webkit-background-clip: text;
+    }
+    14% {
+        background: -webkit-linear-gradient(top, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 1) 10%, rgba(255, 255, 255, 0) 20%, rgba(255, 255, 255, 0) 100%);
+        color: transparent;
+        -webkit-background-clip: text;
+    }
+    21% {
+        background: -webkit-linear-gradient(top, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 1) 15%, rgba(255, 255, 255, 0) 30%, rgba(255, 255, 255, 0) 100%);
+        color: transparent;
+        -webkit-background-clip: text;
+    }
+    28% {
+        background: -webkit-linear-gradient(top, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 1) 20%, rgba(255, 255, 255, 0) 40%, rgba(255, 255, 255, 0) 100%);
+        color: transparent;
+        -webkit-background-clip: text;
+    }
+    35% {
+        background: -webkit-linear-gradient(top, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 1) 25%, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0) 100%);
+        color: transparent;
+        -webkit-background-clip: text;
+    }
+    42% {
+        background: -webkit-linear-gradient(top, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 1) 30%, rgba(255, 255, 255, 0) 60%, rgba(255, 255, 255, 0) 100%);
+        color: transparent;
+        -webkit-background-clip: text;
+    }
+    49% {
+        background: -webkit-linear-gradient(top, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 1) 35%, rgba(255, 255, 255, 0) 70%, rgba(255, 255, 255, 0) 100%);
+        color: transparent;
+        -webkit-background-clip: text;
+    }
+    56% {
+        background: -webkit-linear-gradient(top, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 1) 40%, rgba(255, 255, 255, 0) 80%, rgba(255, 255, 255, 0) 100%);
+        color: transparent;
+        -webkit-background-clip: text;
+    }
+    63% {
+        background: -webkit-linear-gradient(top, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 1) 45%, rgba(255, 255, 255, 0) 90%, rgba(255, 255, 255, 0) 100%);
+        color: transparent;
+        -webkit-background-clip: text;
+    }
+    70% {
+        background: -webkit-linear-gradient(top, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 1) 50%, rgba(255, 255, 255, 0) 100%, rgba(255, 255, 255, 0) 100%);
+        color: transparent;
+        -webkit-background-clip: text;
+    }
+    77% {
+        background: -webkit-linear-gradient(top, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 1) 62.5%, rgba(255, 255, 255, 0) 100%, rgba(255, 255, 255, 0) 100%);
+        color: transparent;
+        -webkit-background-clip: text;
+    }
+    84% {
+        background: -webkit-linear-gradient(top, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 1) 75%, rgba(255, 255, 255, 0) 100%, rgba(255, 255, 255, 0) 100%);
+        color: transparent;
+        -webkit-background-clip: text;
+    }
+    91% {
+        background: -webkit-linear-gradient(top, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 1) 87.5%, rgba(255, 255, 255, 0) 100%, rgba(255, 255, 255, 0) 100%);
+        color: transparent;
+        -webkit-background-clip: text;
+    }
+    100% {
+        background: -webkit-linear-gradient(top, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 1) 100%, rgba(255, 255, 255, 0) 100%, rgba(255, 255, 255, 0) 100%);
+        color: transparent;
+        -webkit-background-clip: text;
+    }
+}
+
+
+/* 场景十一 */
+.active9{
+    opacity: 1;
+    bottom: 0;
+    animation: ImgNineShow 2s linear;
+}
+
+@keyframes ImgNineShow {
+    from{
+        bottom: -150px;
+        opacity: 0;
+    }
+    to {
+        bottom: 0;
+        opacity: 1;
+    }
+}

@@ -71,4 +71,8 @@ $(function () {
         $('#content16').css('display', 'block')
         $('#content15').css('display', 'none')
     })
+    $('#content16').click(function() {
+        $('#content17').css('display', 'block')
+        $('#content16').css('display', 'none')
+    })
 })

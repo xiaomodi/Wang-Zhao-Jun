@@ -2,7 +2,7 @@
     margin:0;
     padding:0;
     font-family: '楷体';
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     font-weight: 900;
   }
   
@@ -40,16 +40,20 @@
     text-align: center;
     background: url('../image/1.替换.png') no-repeat top center;
     background-size: cover;
-    display: table
+    display: flex;
+    justify-content: center;
   }
-  .title{
-    font-size: 50px;
+  .first-content{
+    display: table;
+    margin-top: 18%;
+  }
+  .t1, .t2, .t3{
+    float: left;
+    display: block;
+    font-size: 4.5rem;
     font-weight: bold;
-    font-family: 行书;
-    display: table-cell;
-    vertical-align: middle;
-    letter-spacing: 5px;
-    opacity: 1;
+    margin-right: 1.3rem;
+    visibility: hidden;
   }
 .opacity{
     opacity: 1;
@@ -68,19 +72,20 @@
   height: 100%;
   text-align: center;
   background: #000;
-  display: table;
-  position: relative;
+  display: table
 }
-.desc-content{
-  font-weight: bold;
-  color: #fff;
-  border: .01rem solid #fff;
+.desc-content-wrapper{
+  width: 100%;
+  color: #ffff;
   display: table-cell;
   vertical-align: middle;
 }
-.desc-content-p1, .desc-content-p2{
+.desc-wrapper-p1, .desc-wrapper-p2{
   font-size: 2rem;
+  font-weight: bold;
   line-height: 3rem;
+  letter-spacing: .2rem;
+  opacity: 0;
 }
 /* second */
   .second-wrapper{
@@ -144,15 +149,24 @@
   }
   .third-desc{
     position: absolute;
-    font-family: '楷体';
-    font-size: 1.5rem;
-    font-weight: 900;
-    color: #000;
+    z-index: 10;
     text-align: center;
-    line-height: 2.2rem;
+    line-height: 1.4rem;
     letter-spacing: .2rem;
     margin-top: 1%;
+    /* background: linear-gradient(to bottom, rgba(0,0,0,0.5), rgba(0,0,0,.8), rgba(0,0,0,0.5)); */
+    /* background: rgba(0,0,0,.7); */
+    /* padding: .2rem .4rem; */
+    border-radius: .2rem;
   }
+#third-p1, #third-p2 span{
+  font-size: 1.2rem;
+  font-weight: 900;
+  line-height: 1.5rem;
+  color: #fff;
+  background: linear-gradient(to bottom, rgba(0,0,0,.2), rgba(0,0,0,.5), rgba(0,0,0,.2));
+  margin-bottom: .5rem;
+}
 /* fivth */
 .fivth-wrapper{
     width: 100%;
@@ -189,10 +203,22 @@
     right: 0;
     bottom: 1.7rem;
     line-height: 1.5rem;
-    border: .01rem solid black;
+  }
+  .fivth-p1{
+    text-align: left;
+    margin-left: 9%;
+  }
+  .fivth-p1 span{
+    color: #fff;
+    background: linear-gradient(to bottom, rgba(0,0,0,.2), rgba(0,0,0,.5), rgba(0,0,0,.2));
   }
   .fivth-p2{
     text-align: right;
+    margin-right: 5%;
+  }
+  .fivth-p2 span{
+    color: #fff;
+    background: linear-gradient(to bottom, rgba(0,0,0,.2), rgba(0,0,0,.5), rgba(0,0,0,.2));
   }
   /* sixth */
   .sixth-wrapper{
@@ -227,8 +253,16 @@
   .sixth-p1{
     text-align: left;
   }
+  .sixth-p1 span{
+    color: #fff;
+    background: linear-gradient(to bottom, rgba(0,0,0,.2), rgba(0,0,0,.5), rgba(0,0,0,.2));
+  }
   .sixth-p2{
     text-align: right;
+  }
+  .sixth-p2 span{
+    color: #fff;
+    background: linear-gradient(to bottom, rgba(0,0,0,.2), rgba(0,0,0,.5), rgba(0,0,0,.2));
   }
   /* seven */
   .seven-wrapper{
@@ -261,8 +295,11 @@
     bottom: 5%;
     text-align: center;
     line-height: 1.5rem;
+    letter-spacing: .05rem;
+  }
+  .seven-p1, .seven-p2 span{
     color: #fff;
-    border: .01rem solid yellow;
+    background: linear-gradient(to bottom, rgba(0,0,0,.2), rgba(0,0,0,.5), rgba(0,0,0,.2));
   }
   /* eight */
   .eight-wrapper{
@@ -285,8 +322,12 @@
   }
   .eight-desc{
     position: absolute;
-    bottom: 1rem;
+    bottom: 3rem;
     color: #fff;
+  }
+  .eight-desc span{
+    color: #fff;
+    background: linear-gradient(to bottom, rgba(0,0,0,.2), rgba(0,0,0,.5), rgba(0,0,0,.2));
   }
   /* nine */
   .nine-wrapper{
@@ -313,17 +354,18 @@
     position: absolute;
     left: 0;
     right: 0;
-    bottom: 0;
+    bottom: -150px;
+    opacity: 0;
   }
   .nine-desc{
-    font-size: 1.2rem !important;
     position: absolute;
-    left: 15%;
-    right: 15%;
-    bottom: 1rem;
+    bottom: 3rem;
     color: #fff;
     text-align: center;
-    border: .1rem solid yellow;
+  }
+  .nine-desc span{
+    color: #fff;
+    background: linear-gradient(to bottom, rgba(0,0,0,.2), rgba(0,0,0,.5), rgba(0,0,0,.2));
   }
   /* nine */
   .contentnine-wrapper{
@@ -334,21 +376,26 @@
     justify-content: center;
   }
   .contentnine {
-    width: 70%;
+    width: 80%;
     height: 100%;
     text-align: center;
-    background: url('../image/11.png') no-repeat center center;
-    background-size: cover;
-    display: flex;
-    justify-content: center;
-    overflow: hidden;
+    background: #000;
     position: relative;
+    display: table;
+  }
+  .contentnine-desc{
+    display: table-cell;
+    vertical-align: middle;
+  }
+  .contentnine-p1, .contentnine-p2, .contentnine-p3, .contentnine-p4, .contentnine-p5, .contentnine-p6, .contentnine-p7, .contentnine-p8{
+    font-size: 1.3rem;
+    line-height: 2rem;
+    font-weight: bold;
   }
   /* ten */
   .ten-wrapper{
     width: 100%;
     height: 100%;
-    position: relative;
     display: flex;
     justify-content: center;
   }
@@ -361,7 +408,8 @@
     display: flex;
     justify-content: center;
     overflow: hidden;
-    position: relative;
+    position: fixed;
+    border: .01rem solid yellow;
   }
   .ten-pic1, .ten-pic2, .ten-pic3{
     width: 100%;
@@ -371,6 +419,21 @@
     left: 0;
     right: 0;
     bottom: 0;
+  }
+  .ten-desc{
+    position: absolute;
+    left: 15%;
+    right: 15%;
+    bottom: 1rem;
+    font-size: 1.1rem;
+    text-align: center;
+  }
+  .ten-p1{
+    text-align: left;
+    text-indent: 1rem;
+  }
+  .ten-p2{
+    text-align: right;
   }
   /* eleven */
   .eleven-wrapper{
@@ -394,6 +457,16 @@
   .eleven-pic1, .eleven-pic2{
     width: 100%;
     height: 100%
+  }
+  .eleven-desc{
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 1rem;
+    line-height: 1.4rem;
+    text-align: center;
+    width: 100%;
+    color: #fff;
   }
   /* twelve */
   .twelve-wrapper{
@@ -433,7 +506,18 @@
     left: 0;
     right: 0;
     bottom: 0;
-    border: 1px solid red
+  }
+  .twelve-desc{
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    color: #fff;
+    bottom: 1rem;
+  }
+  .twelve-p1 span{
+    box-sizing: border-box;
+    border-radius: .3rem;
+    background: rgba(0,0,0,.7)
   }
   /* thirteen */
   .thirteen-wrapper{
@@ -482,6 +566,12 @@
     right: 0;
     bottom: 0;
   }
+  .forteen-desc{
+    position: absolute;
+    bottom: 1rem;
+    text-align: center;
+    line-height: 1.4rem;
+  }
    /* fiveteen */
    .fiveteen-wrapper{
     width: 100%;
@@ -511,6 +601,16 @@
   }
   .fiveteen-pic1{
     width: 100%;
+  }
+  .fivteen-desc{
+    position: absolute;
+    bottom: 1rem;
+    color: #fff;
+    background: rgba(0, 0, 0, 0.7);
+    padding: .2rem .4rem;
+    border-radius: .3rem;
+    line-height: 1.6rem;
+    border: .01rem solid black;
   }
   /* sixteen */
   .sixteen-wrapper{
@@ -550,6 +650,17 @@
     bottom: 0;
     z-index: 2
   }
+  .sixteen-desc{
+    border:.01rem solid black;
+    color: #fff;
+    position: absolute;
+    bottom: 1rem;
+    z-index: 10;
+    background: rgba(0,0,0,.7);
+    padding: .2rem .5rem;
+    box-sizing: border-box;
+    border-radius: .3rem;
+  }
   /* seventeen */
   .seventeen-wrapper{
     width: 100%;
@@ -561,6 +672,31 @@
   .seventeen {
     width: 70%;
     height: 100%;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    position: relative;
+  }
+  .seventeen-pic{
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+  }
+  .seventeen-pic-active{
+    opacity: 1;
+    transition: opacity 2s ease-in;
+  }
+  /* eightteen */
+  .eightteen-wrapper{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+  }
+  .eightteen {
+    width: 70%;
+    height: 100%;
     text-align: center;
     background: url('../image/21背景.jpg') no-repeat bottom center;
     background-size: cover;
@@ -569,7 +705,7 @@
     overflow: hidden;
     position: relative;
   }
-  .sixteen-pic1, .sixteen-pic2, .sixteen-pic3, .sixteen-pic4{
+  .eightteen-pic1, .eightteen-pic2, .eightteen-pic3, .eightteen-pic4{
     width: 100%;
     height: 100%;
     position: absolute;
@@ -579,4 +715,15 @@
     right: 0;
     bottom: 0;
     z-index: 2
+  }
+  .eightteen-desc{
+    position: absolute;
+    bottom: 1rem;
+    z-index: 10;
+    color: #fff;
+    background: rgba(0,0,0,.7);
+    padding: .2rem .7rem;
+    border-radius: .2rem;
+    line-height: 1.4rem;
+    border: .01rem solid black;
   }
