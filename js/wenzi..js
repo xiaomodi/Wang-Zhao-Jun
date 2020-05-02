@@ -143,3 +143,109 @@ b.onclick = () => {
         CNSPAN.className = 'active'
     }, 1300)
 }
+// 场景十二
+const ten = document.getElementById('contentNine')
+const TenP1 = document.getElementById('ten-p1')
+const TenP2 = document.getElementById('ten-p2')
+ten.onclick = () => {
+    TenP1.style.opacity = 1
+    TenP1.style.transition = 'all 2s linear'
+    setTimeout(() => {
+        TenP2.style.opacity = 1
+        TenP2.style.transition = 'all 2s linear'
+    }, 2000)
+}
+// 场景十三
+const eleven = document.getElementById('content10')
+const ELP1 = document.getElementById('EP1')
+const ELP2 = document.getElementById('EP2')
+eleven.onclick = () => {
+    setTimeout(() => {
+        ELP1.style.opacity = 1
+        ELP1.style.transition = 'all 2s linear'
+        setTimeout(() => {
+            ELP2.style.opacity = 1
+            ELP2.style.transition = 'all 2s linear'
+        }, 1000)
+    },1000)
+}
+// 场景十四
+const tweleve = document.getElementById('content11')
+const TWP1 = document.getElementById('TWP1')
+tweleve.onclick = () => {
+    setTimeout(() => {
+        TWP1.style.opacity = 1
+        TWP1.style.transition = 'all 2s linear'
+    }, 1000);
+}
+// 场景十五
+const fourteen = document.getElementById('content12')
+const FTP1 = document.getElementById('FTP1')
+const FTP2 = document.getElementById('FTP2')
+fourteen.onclick = () => {
+    setTimeout(() => {
+        FTP1.style.opacity = 1
+        FTP1.style.transition = 'all 2s linear'
+        setTimeout(() => {
+            FTP2.style.opacity = 1
+            FTP2.style.transition = 'all 2s linear'
+        }, 1000)
+    }, 1000)
+}
+// 场景十六
+const fivteen = document.getElementById('content13')
+const FIT1 = document.getElementById('FIT1')
+const FIT2 = document.getElementById('FIT2')
+fivteen.onclick = () => {
+    setTimeout(() => {
+        FIT1.style.opacity = 1
+        FIT1.style.transition = 'all 2s linear'
+        setTimeout(() => {
+            FIT2.style.opacity = 1
+            FIT2.style.transition = 'all 2s linear'
+        },1000)
+    }, 1000)
+}
+// 场景十七
+const sixteen = document.getElementById('content14')
+const SIT1 = document.getElementById('SIT1')
+const SIT2 = document.getElementById('SIT2')
+sixteen.onclick = () => {
+    setTimeout(() => {
+        SIT1.style.opacity = 1
+        SIT1.style.transition = 'all 2s linear'
+        setTimeout(() => {
+            SIT2.style.opacity = 1
+            SIT2.style.transition = 'all 2s linear'
+        },1000)
+    }, 1000)
+}
+// 场景十八
+const seventeen = document.getElementById('content15')
+const SCNSPAN = document.getElementById('SCNSPAN')
+seventeen.onclick = () => {
+    setTimeout(() => {
+        SCNSPAN.style.display = 'block'
+        SCNSPAN.className = 'active'
+    }, 1000)
+}
+
+// 场景十九
+const eighteen = document.getElementById('content16')
+const EIP1 = document.getElementById('EIP1')
+const EIP2 = document.getElementById('EIP2')
+const EIP3 = document.getElementById('EIP3')
+eighteen.onclick = () => {
+    setTimeout(() => {
+        EIP1.style.opacity = 1
+        EIP1.style.transition = 'all 2s linear'
+        setTimeout(() => {
+            EIP2.style.opacity = 1
+            EIP2.style.transition = 'all 2s linear'
+            setTimeout(() => {
+                EIP3.style.opacity = 1
+                EIP3.style.transition = 'all 2s linear'
+            }, 1000)
+        }, 1000)
+    }, 1000)
+}
