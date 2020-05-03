@@ -147,12 +147,18 @@ b.onclick = () => {
 const ten = document.getElementById('contentNine')
 const TenP1 = document.getElementById('ten-p1')
 const TenP2 = document.getElementById('ten-p2')
+const TenPic = document.getElementById('ten-pic1')
 ten.onclick = () => {
-    TenP1.style.opacity = 1
-    TenP1.style.transition = 'all 2s linear'
     setTimeout(() => {
-        TenP2.style.opacity = 1
-        TenP2.style.transition = 'all 2s linear'
+        TenPic.className = 'ten-pic1 active12'
+        setTimeout(() => {
+            TenP1.style.opacity = 1
+            TenP1.style.transition = 'all 2s linear'
+            setTimeout(() => {
+                TenP2.style.opacity = 1
+                TenP2.style.transition = 'all 2s linear'
+            }, 2000)
+        }, 2000)
     }, 2000)
 }
 // 场景十三

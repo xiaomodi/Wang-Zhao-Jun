@@ -114,3 +114,19 @@
         opacity: 1;
     }
 }
+/* 场景十二 */
+.active12{
+    left: 0;
+    opacity: 1;
+    animation: ImgTwiveShow 2s linear
+}
+@keyframes ImgTwiveShow {
+    from {
+        left: 400px;
+        opacity: 0;
+    }
+    to {
+        left: 0;
+        opacity: 1;
+    }
+}
